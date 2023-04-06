@@ -1,0 +1,63 @@
+:root
+    --container-inline-pd: 1.5rem
+
+/////// Utilities ////////
+
+@mixin debug($outlinePx)
+    outline: #{$outlinePx}px solid green !important
+ 
+        
+
+
+.container
+    max-inline-size: 1200px
+    margin-inline: var(--container-inline-pd)
+
+/////// Txtx ////////
+.md-title
+    font-size: 16px
+    font-weight: bold
+    letter-spacing: 6px
+    text-transform: uppercase
+    margin-block-end: 12px
+
+/////// Components ////////
+.btn
+    cursor: pointer
+    text-align: center
+    background: transparent
+    border: none
+
+    &__menu, &__close
+        display: flex
+        align-items: center
+        --pd-small: 6px
+        padding: var(--pd-small) var(--pd-small) var(--pd-small) 0
+
+    &__menu img, &__close img
+        width: 20px
+        height: 20px
+        object-fit: contain
+
+    &__next, &__previous
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #000
+        width: 60px
+        height: 60px
+
+    &__primary
+        display: flex
+        gap: 16px
+        align-items: center
+        margin-block-start: 24px
+        padding-block: 12px
+        letter-spacing: 3px
+        font-size: 17px
+        text-transform: uppercase
+
+
+@mixin  utilities-for-md-devices
+    :root 
+        --container-inline-pd: 3rem

@@ -1,0 +1,106 @@
+/////// Layout ////////
+.header
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 5
+    overflow: hidden
+    padding-inline: var(--container-inline-pd)
+
+.nav, .menu, .menu__list
+    display: flex
+    align-items: center
+
+.nav
+    height: 80px
+
+.logo
+    margin-inline: auto
+
+.menu
+    justify-content: space-between
+    background: #fff
+    overflow: hidden
+    position: absolute
+    visibility: hidden
+    inset: 0
+    z-index: 20
+    width: 0
+    height: 0
+    // gap: 80px
+    padding-inline: 1.5rem
+    transition: .3s ease
+
+    &__list
+        gap: 16px
+
+    &__link
+        text-transform: lowercase
+        font-weight: medium
+
+.menu-is-open
+    width: 100%
+    height: auto
+    visibility: visible
+
+.layer
+    display: none
+
+.layer-is-active
+    background: #1b1c1c87
+    display: block
+    width: 100vw
+    min-height: 100vh
+    position: absolute
+    inset: 0
+    z-index: 1
+
+@mixin nav-for-md-devices
+    .nav 
+        gap: 60px
+
+    .nav .btn__menu
+        display: none
+
+    .nav .logo
+        order: -1
+        margin-inline: 0
+
+    .menu 
+        color: #fff
+        position: initial
+        display: flex
+        visibility: visible
+        background: transparent
+        width: auto 
+        height: auto 
+        padding-inline: 0   
+        overflow: unset
+
+    .menu__list
+        gap: 24px
+
+    .btn__close
+        display: none
+
+    .menu__link 
+        position: relative
+
+    .menu__link::after 
+        background: transparent
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        display: block
+        width: 20px
+        height: 2px
+        transition: .3s ease
+        transform: translateY(4px)
+        margin-inline: auto
+
+    .menu__link:hover::after
+        background: #fff
+        transform: translateY(8px)

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <title>Room homepage</title>
+
+</head>
+
+<body class="rom-furnitures">
+  <!------ Header ------>
+  <header class="header room__header">
+    <nav class="nav room__nav ">
+      <button type="button" id="btn-menu" class="btn btn__menu">
+        <img src="assets/images/icon-hamburger.svg" alt="" class="icon">
+      </button>
+
+      <div id="menu" class="menu">
+        <button type="button" id="btn-close" class="btn btn__close">
+          <img src="assets/images/icon-close.svg" alt="" class="icon">
+        </button>
+
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <img src="assets/images/logo.svg" alt="Room" class="logo">
+    </nav>
+  </header>
+  <div id="layer" class="layer"></div>
+
+  <!------ Main ------>
+  <main class="main room__main grid">
+    <img id="furniture-img" class="normal-img furniture__img" srcset="" height="360px" alt="Shazam" />
+
+    <button id="btn-prev" class="btn btn__previous"><img src="assets/images/icon-angle-left.svg"
+        alt="Previous item icon" class="btn__previous-icon"></button>
+    <button id="btn-next" class="btn btn__next"><img src="assets/images/icon-angle-right.svg" alt="Next item icon"
+        class="btn__next-icon"></button>
+
+    <article class="furniture__description">
+      <h1 id="furniture-title" class="furniture__title"></h1>
+      <p id="furniture-txt" class="furniture__txt"></p>
+      <button class="btn btn__primary">Shop Now <img class="btn btn__primary-icon" src="assets/images/icon-arrow.svg "alt="dasd"></button>
+      <button id="btn-prev" class="btn btn__previous"><img src="assets/images/icon-angle-left.svg"alt="Previous item icon" class="btn__previous-icon"></button>
+      <button id="btn-next" class="btn btn__next"><img src="assets/images/icon-angle-right.svg" alt="Next item icon" class="btn__next-icon"></button>
+    </article>
+    <!-- </article> -->
+
+    <!-- <article class="furniture furniture__about"> -->
+
+    <section class="subgrid about__section">
+      <img class="normal-img about-img" src="assets/images/image-about-dark.jpg"
+        alt="Furniture of two white chairs and a desk">
+      <article class="furniture__about furniture__description">
+        <h2 class="md-title"> About our furniture</h2>
+        <p class="furniture__txt">Our multifunctional collection blends design and function to suit your individual
+          taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.</p>
+      </article>
+      <img class="normal-img about-img" src="assets/images/image-about-light.jpg" alt="">
+    </section>
+    <!-- </article> -->
+  </main>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+
+</html>
