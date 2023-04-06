@@ -1,11 +1,12 @@
 # Frontend Mentor - Room homepage solution
+![](./design/desktop-design-slide-1.jpg)
 
 This is a solution to the [Room homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#room-homepage-solution)
+  - [The challenge](#challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
