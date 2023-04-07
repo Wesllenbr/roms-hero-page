@@ -1,5 +1,5 @@
 # Frontend Mentor - Room homepage solution
-![](./design/desktop-design-slide-1.jpg)
+![](./design/desktop-solution-screenshot.png)
 
 This is a solution to the [Room homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq).
 
@@ -35,7 +35,7 @@ Mobile
 
 Desktop
 
-![](./design/desktop-solution-screenshot.png-solution-screenshot.png)
+![](./design/desktop-solution-screenshot.png)
 
 ### Links
 
@@ -47,43 +47,14 @@ Desktop
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SASS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-
+-Picture and source elemnts
+-Minmax function of CSS grid
 
 ## Author
 

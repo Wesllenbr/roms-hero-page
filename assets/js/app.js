@@ -30,10 +30,6 @@ menuLayer.addEventListener('click', closeMenu)
 ///////// Furniture /////////
 let currentFurniture = 0
 
-
-// Get furniture elements
-// const prevBtn = document.getElementById('btn-prev')
-// const nexBtn = document.getElementById('btn-next')
 const prevBtn = document.querySelectorAll('.btn__previous')
 const nexBtn = document.querySelectorAll('.btn__next')
 const furnitureImg = document.getElementById('furniture-img')
@@ -41,11 +37,10 @@ const furnitureTitle = document.getElementById('furniture-title')
 const furnitureTxt = document.getElementById('furniture-txt')
 
 console.log(prevBtn)
-// const furnitureItem = furnitures[currentFurniture] // -----------FUNCTION OR BETTER NAME
 repetitivesFurnitureProps()
 const lastFurnitureItem = furnitures.length - 1
 
-function nextItem() { // -----------EXPORT
+function nextItem() {
     currentFurniture++
 
     if (currentFurniture > lastFurnitureItem) {
@@ -57,7 +52,7 @@ function nextItem() { // -----------EXPORT
     repetitivesFurnitureProps()
 }
 
-function prevItem() { // -----------EXPORT
+function prevItem() {
     currentFurniture--
 
     if (currentFurniture < 0) {
@@ -90,7 +85,7 @@ prevBtn.forEach((btn) => {
 ///////// Ramdom numbers /////////
 
 // Random item
-function randomItem() { // -----------EXPORT
+function randomItem() {
     const ramdomNumber = Math.floor(Math.random() * furnitures.length)
 
     currentFurniture = ramdomNumber
