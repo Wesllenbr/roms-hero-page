@@ -12,12 +12,12 @@ const menuLayer = document.getElementById('layer')
 // Nav functions
 const menu = document.getElementById('menu')
 
-export function openMenu() { // -----------EXPORT
+export function openMenu() {
     menu.classList.add('menu-is-open')
     menuLayer.classList.add('layer-is-active')
 }
 
-export function closeMenu() { // -----------EXPORT
+export function closeMenu() { 
     menu.classList.remove('menu-is-open')
     menuLayer.classList.remove('layer-is-active')
 }
@@ -64,7 +64,7 @@ function prevItem() {
     
 }
 
-// Create repetitives changes in the review properties ------------EXPORT
+// Create repetitives changes in the review properties
 function repetitivesFurnitureProps() {
     const furnitureItem = furnitures[currentFurniture]
     furnitureImg.setAttribute("srcset", furnitureItem.imgSrcset)
